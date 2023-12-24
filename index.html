@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body class="md:bg-char-gray w-screen h-screen grid justify-center font-Roboto mt-0">
+  <article class="doneAction hidden bg-white w-screen md:w-1/3 md:h-6/12 items-center justify-center m-auto p-12 rounded-[20px] gap-4">
+    <div class="grid gap-4">
+      <img src="assets/images/icon-success.svg" alt="check-icon">
+      <h1 class="text-4xl font-bold text-dark-gray">Thanks for subscribing!</h1>
+      <p class="text-dark-gray">A confirmation email has been sent to <span class="doneMessage font-bold text-dark-gray"></span> 
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="dismissBtn bg-dark-gray p-4 text-white font-bold rounded-[6px]">Dismiss message</button>
+    </div>
+  </article>
+  <div class="mobileBg md:hidden w-full">
+    <img class="w-full h-full" src="assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+  </div>
+  <article class="article flex md:w-4/5 md:h-4/5 bg-white text-dark-gray p-2 rounded-[16px] m-auto gap-1">
+    <div class="grid gap-2 md:w-2/3 h-full pb-32 px-10 md:px-14 md:pe-2 md:pt-16">
+      <h1 class="text-4xl font-bold">Stay updated!</h1>
+      <p class="text-xl mb-2">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="grid gap-1">
+        <li class="flex gap-4"><img class="h-6" src="assets/images/icon-list.svg" alt="icon-list"> <p>Product discovery and building what matters</p></li>
+        <li class="flex gap-4"><img class="h-6" src="assets/images/icon-list.svg" alt="icon-list-2"> <p>Measuring to ensure updates are a success</p></li>
+        <li class="flex gap-4"><img class="h-6" src="assets/images/icon-list.svg" alt="icon-list-3"> <p>And much more!</p></li>
+      </ul>
+      <form method="post" class="form grid w-full mt-4 gap-2">
+        <div for="email" class="w-full flex"><div class="w-full text-start font-bold">Email address</div>  <div class="invisible w-full text-end text-red-500">Valid email required</div></div>
+        <input type="email" name="email" id="email" class="border-2 border-gray-200 rounded-[6px] p-2" placeholder="email@company.com" required>
+        <div class="flex bg-dark-gray w-full items-center text-white p-4 text-6 font-thin hover:bg-char-gray hover:border-2 rounded-[8px]"><button class="button w-full">Subscribe to monthly newsletter</button></div>
+      </form>
+    </div>
+    <div class="hidden md:block md:w-1/2 md:h-full md:p-4 border-2">
+      
+      <img class="w:full h-96 md:h-full" src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+    </div>
+
+  </article>
+
+ 
+</body>
+<script src="script.js"></script>
+</html>
